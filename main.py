@@ -18,7 +18,6 @@ def random_delay(min_delay=1, max_delay=5):
     delay_time = random.uniform(min_delay, max_delay)
     time.sleep(delay_time)
 
-import requests
 def user_exit(segwit_address, taoroot_address, proxies, ua):
     url = f"https://wallet.xverse.app/api/registrations?btcAddress={segwit_address}&ordinalAddress={taoroot_address}"
 
